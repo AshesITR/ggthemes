@@ -1,6 +1,7 @@
 #' Magic Number: Points to Millimeters
+#' 72 Points are one inch, an inch is 25.4 mm.
 #' @noRd
-PT_TO_MM <- 0.352778
+PT_TO_MM <- 25.4 / 72
 
 charopts <- function(x) {
   paste(sprintf("\\code{\"%s\"}", x), collapse = ", ")
